@@ -1,0 +1,17 @@
+#button_grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid_items {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  text-align: right;
+}
+
+#answer {
+  font-size: 1.5rem;
+}

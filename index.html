@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div data-role="page" data-title="Banking App" id="page1" data-theme="b">
+      <div data-role="header" data-position="fixed">
+        <h2>Header Main Page</h2>
+      </div>
+
+      <div id="content" data-role="content" class="calculator">
+        <h1>Calc</h1>
+        <label type="text" id="output"></label>
+        <label type="text" id="answer"></label>
+        <div id="button_grid" class="pinpad">
+          <div class="grid_items">
+            <button disabled="true">%</button>
+            <button class="clear">CE</button>
+            <button class="clear">C</button>
+            <button id="back">BACK</button>
+          </div>
+          <div class="grid_items">
+            <button disabled="true">1/x</button>
+            <button disabled="true">^2</button>
+            <button disabled="true">2rtx</button>
+            <button class="operator">/</button>
+          </div>
+          <div class="grid_items">
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">*</button>
+          </div>
+          <div class="grid_items">
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">-</button>
+          </div>
+          <div class="grid_items">
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator">+</button>
+          </div>
+          <div class="grid_items">
+            <button disabled="true">+/-</button>
+            <button class="number">0</button>
+            <button class="number">.</button>
+            <button id="enter">=</button>
+          </div>
+        </div>
+      </div>
+      <div id="footer" data-role="footer" data-position="fixed">
+        <h2>Footer Main Page</h2>
+      </div>
+    </div>
+  </body>
+</html>
